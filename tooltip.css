@@ -1,0 +1,106 @@
+:root{
+  --elem-width: 100px;
+  --elem-height:100px;
+  --tooltip-before-color:black
+}
+body, ul {
+    margin:0;
+    padding:0;
+}
+.lorem {
+    margin:0 auto;
+    width:80%;
+    background-color:grey;
+    font-size: 24px;
+}
+.tooltipped{
+    display:inline-block;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    border:1px solid red;
+    width:var(--elem-width);
+    height:var(--elem-width)
+}
+
+.tooltip {
+    box-sizing:border-box;
+    
+    max-width: 400px;
+    height:auto;
+    position:absolute;
+    background-color:black;
+    color:white;
+    padding:15px;
+    z-index:5;
+    font-size: 16px;
+    margin:0
+}
+
+.tooltip.animFadeIn{
+  animation-name: fadeIn;
+  animation-duration:0.5s;
+}
+
+.tooltip:before {
+    content : "";
+    width: 0;
+    height: 0;
+    position:absolute;
+  }
+ 
+  .tooltip.top:before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--tooltip-before-color);
+    bottom:-5px;
+    left:0
+    
+  }
+  .tooltip.bottom:before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--tooltip-before-color);
+    top:-5px;
+    left:0;
+  }
+  .tooltip.left:before {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid var(--tooltip-before-color);
+    top:0;
+    right:-5px;
+  }
+  .tooltip.right:before {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid var(--tooltip-before-color);
+    top:0;
+    left:-5px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @media (max-width:768px){
+    .tooltip {
+      width:50% !important;
+      max-width: 500px !important;
+      height:auto;
+      left:25%!important;
+      position:relative !important;
+      padding:10px;
+      font-size: 12px;
+      
+  }
+  .tooltip:before{
+    opacity: 0;
+    visibility:hidden
+  }
+  }
