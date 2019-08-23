@@ -1,4 +1,11 @@
-#Javascript and Css small Tooltip Library
-## version 1.0.1 is self initiatied 
-## all you need to do is add data-tooltip attribute with text and data-postition = top 
-## it can be used only with span elements
+#Javascript and CSS lightweight Tooltip Library
+1.  Version 1.0.2
+	-  applies only to span elements
+	```
+	<span data-tooltip = "Hello my Name is Tooltip, I can see dive around me :)">
+	```
+	- by default it displays tooltip on the top and 
+	- it changes position in edge cases automaticly 
+	
+2. Version 1.0.3 will be released soon. There will be options to customize tooltip.
+

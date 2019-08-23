@@ -25,8 +25,9 @@ body, ul {
 
 .tooltip {
     box-sizing:border-box;
-    
-    max-width: 400px;
+    line-height:1.2;
+    max-width: 500px;
+    width:400px;
     height:auto;
     position:absolute;
     background-color:black;
@@ -37,7 +38,7 @@ body, ul {
     margin:0
 }
 
-.tooltip.animFadeIn{
+.tooltip.animFadeIn {
   animation-name: fadeIn;
   animation-duration:0.5s;
 }
@@ -91,12 +92,12 @@ body, ul {
   @media (max-width:768px){
     .tooltip {
       width:50% !important;
-      max-width: 500px !important;
+      max-width: 400px !important;
       height:auto;
       left:25%!important;
       position:relative !important;
       padding:10px;
-      font-size: 12px;
+      font-size: 14px;
       
   }
   .tooltip:before{

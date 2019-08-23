@@ -1,7 +1,7 @@
 {
   "name": "sebwie-tooltips",
-  "version": "1.0.1",
-  "description": "Custom javascript/css tooltip library",
+  "version": "1.0.2",
+  "description": "Javascript and css tooltip lightweight library",
   "main": "tooltip.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
