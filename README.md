@@ -15,7 +15,7 @@
 ```
 <span
 	class="tooltipped" 
-	data-tooltip = "Hello my Name is Tooltip, I can see div around me">
+	data-tooltip = "Hello my Name is Tooltip, I can see div around me">Tooltipped Element<span>
 ```
 * Map **css** and **js** files
 ```
