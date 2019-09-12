@@ -1,6 +1,6 @@
 {
   "name": "sebwie-tooltips",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Javascript and css tooltip lightweight library",
   "main": "tooltip.js",
   "scripts": {
